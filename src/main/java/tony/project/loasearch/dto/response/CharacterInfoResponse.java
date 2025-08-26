@@ -4,8 +4,10 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import tony.project.loasearch.dto.data.ArmoryAvatar;
 import tony.project.loasearch.dto.data.ArmoryEquipment;
 import tony.project.loasearch.dto.data.ArmoryProfile;
+import tony.project.loasearch.dto.data.ArmorySkill.ArmorySkill;
 import tony.project.loasearch.dto.data.CharacterInfo;
 
 import java.util.List;
@@ -20,5 +22,9 @@ public class CharacterInfoResponse {
     private ArmoryProfile armoryProfile;
     @JsonProperty("ArmoryEquipment")
     private List<ArmoryEquipment> equipments;
+    @JsonProperty("ArmoryAvatar")
+    private List<ArmoryAvatar> avatars;
+    @JsonProperty("ArmorySkill")
+    private List<ArmorySkill> skills;
 
 }
