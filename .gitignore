@@ -38,3 +38,5 @@ out/
 
 ### yml files ###
 *.yml
+*.yaml
+!**/src/main/**/yml/
